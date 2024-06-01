@@ -1,14 +1,19 @@
-"use client"
+"use client";
+import Categories from "@/components/Categories";
+import ContentPanel from "@/components/ContentPanel";
+import FeaturedCars from "@/components/FeaturedCars";
+import Hero from "@/components/Hero";
+import HomeHeader from "@/components/HomeHeader";
 import SignInButton from "@/components/SignInButton";
 
 export default function Home() {
-  
-  
   return (
-    <div className="bg-blue-900 w-screen h-screen flex items-center">
+    <div className="">
       <div className="text-center w-full">
-        <button className="bg-white p-2 px-4 rounded-lg">Login with Google</button>
-        <SignInButton />
+        <HomeHeader />
+        <Hero />
+        <FeaturedCars />
+        <Categories />
       </div>
     </div>
   );
