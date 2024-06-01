@@ -1,0 +1,137 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+    background: #e0e0e0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 8px;
+
+    .mobile_nav {
+        display: none;
+        border: none;
+        background: none;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    nav {
+        ul {
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+
+            li {
+                a {
+                    color: #000;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    button {
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+    }
+}
+
+@media (min-width: 320px) {
+    .header-container {
+        max-width: 320px;
+
+        .mobile_nav {
+            display: flex;
+        }
+
+        h1 {
+            font-size: 1.25rem;
+        }
+
+        nav {
+            ul {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 475px) {
+    .header-container {
+        max-width: 475px;
+
+        .mobile_nav {
+            display: flex;
+        }
+
+        strong {
+            margin-left: 0.5rem;
+            flex: 1;
+        }
+
+        nav {
+            ul {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 640px) {
+    .header-container {
+        max-width: 640px;
+
+        .mobile_nav {
+            display: none;
+        }
+
+        strong {
+            margin-left: 0.5rem;
+            flex: 0;
+        }
+
+        nav {
+            ul {
+                display: flex;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .header-container {
+        max-width: 700px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header-container {
+        max-width: 700px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .header-container {
+        max-width: 700px;
+    }
+}
+
+@media (min-width: 1536px) {
+    .header-container {
+        max-width: 700px;
+    }
+}
