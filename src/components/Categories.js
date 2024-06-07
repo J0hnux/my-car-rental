@@ -1,5 +1,5 @@
 const Categories = () => {
-  return <div className="categories container section">Categories</div>;
+  return <section className="categories container">Categories</section>;
 };
 
 export default Categories;
