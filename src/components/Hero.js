@@ -2,7 +2,7 @@ import "./Hero.scss";
 
 const Hero = () => {
   return (
-    <div className="hero container section">
+    <section className="hero container">
       <div className="hero_left_panel">
         <h1>Hero</h1>
         <p>
@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="hero_img_container">
         <img src="/Hero.png" alt="hero.png" />
       </div>
-    </div>
+    </section>
   );
 };
 
