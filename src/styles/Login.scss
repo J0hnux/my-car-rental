@@ -7,21 +7,21 @@
 
     .login-area,
     .signup-area {
-        margin: 0;
+        width: 100%;
+        max-width: 500px;
     }
 
     .login-area {
         display: flex;
         flex-direction: column;
         background: #fff;
-        max-width: 500px;
         gap: 1rem;
-        margin: 0 auto;
         padding: 5rem;
         border: 2px solid #c4c4c4;
         border-bottom: none;
         border-top-left-radius: 16px;
         border-top-right-radius: 16px;
+        align-self: center;
 
         .login_header {
             text-align: center;
@@ -86,7 +86,8 @@
         justify-content: center;
         align-items: center;
         background: #272626;
-        padding: 1rem;
+        padding: 1rem 5rem;
+        border: 2px solid #272626;
         border-bottom-left-radius: 16px;
         border-bottom-right-radius: 16px;
 
