@@ -1,0 +1,28 @@
+.socials-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 0.5rem 3rem;
+
+    ul {
+        display: flex;
+        gap: 1rem;
+
+        li {
+            span {
+                margin-right: 0.75rem;
+            }
+
+            a {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .social-left-side {}
+
+    .social-right-side {}
+}
