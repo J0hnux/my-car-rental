@@ -1,22 +1,61 @@
 .featured {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        font-size: 2rem;
+        align-self: self-start;
+
+        span {
+            font-weight: 300;
+        }
+    }
 
     .image_carousel {
         position: relative;
         margin: auto;
+        width: 100%;
 
         .image-slide {
+            position: relative;
+
             img {
                 width: 100%;
             }
 
-            .image-text {
-                color: #313131;
-                font-size: 15px;
-                padding: 8px 12px;
+            .slide-details {
                 position: absolute;
-                bottom: 8px;
-                width: 100%;
-                text-align: center;
+                bottom: 0;
+                right: 0;
+                background: #b4b4b4;
+                width: 20rem;
+                height: auto;
+                border-top-left-radius: 16px;
+                padding: 2rem;
+                color: #000;
+                text-align: left;
+
+                h2 {
+                    font-size: 1.5rem;
+                    margin: 0 0 1rem 0;
+                }
+
+                ul {
+                    list-style: circle;
+                    padding-left: 1.2rem;
+                }
+
+                button {
+                    float: right;
+                    background: #000;
+                    color: #fff;
+                    padding: 0.5rem;
+                    border-radius: 8px;
+
+                    &:hover {
+                        scale: 1.05;
+                    }
+                }
             }
         }
 
