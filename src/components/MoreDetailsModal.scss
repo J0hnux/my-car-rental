@@ -1,0 +1,29 @@
+.slide-details-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    z-index: 9999;
+
+    .detail-modal-container {
+        display: inherit;
+        flex-direction: column;
+        position: relative;
+        padding: 1rem;
+        width: 100%;
+        background-color: rgba(73, 73, 73, 0.9);
+        border: 1px solid #fff;
+        max-width: 900px;
+
+        .close-details-modal {
+            align-self: self-end;
+        }
+
+        h2 {
+            //margin-top: 2rem;
+        }
+    }
+}
