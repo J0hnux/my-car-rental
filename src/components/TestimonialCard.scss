@@ -1,0 +1,28 @@
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid red;
+    width: 400px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+
+    img {
+        align-self: center;
+        border-radius: 50%;
+        width: 10rem;
+    }
+
+    .testimonial-card-details {
+        display: inherit;
+        flex-direction: inherit;
+        justify-content: flex-start;
+        align-items: self-start;
+
+        p {
+            text-align: left;
+            margin-top: 1rem;
+        }
+    }
+}
