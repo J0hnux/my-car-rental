@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Car Rental",
-  description: "Car Rental",
+  description: "Clark Cars Rental Philippines",
 };
 
 export default function RootLayout({ children }) {
