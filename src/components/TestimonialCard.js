@@ -1,15 +1,12 @@
 import "./TestimonialCard.scss";
 
-const TestimonialCard = () => {
+const TestimonialCard = (props) => {
   return (
     <div className="testimonial-card">
-      <img src="/Testimonials/my-pic2.jpeg" alt="the image" />
+      <img src={props.imgUrl} alt={props.imgAlt} />
       <div className="testimonial-card-details">
-        <h3>Name</h3>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil rem
-          facilis aut, molestiae eius adipisci excepturi iusto fugiat?{" "}
-        </p>
+        <h3 className="mt-4">{props.name}</h3>
+        <p>{props.testimony}</p>
       </div>
     </div>
   );

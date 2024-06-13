@@ -5,13 +5,14 @@
     text-align: center;
     border: 1px solid red;
     width: 400px;
-    padding: 1rem;
+    padding: 2rem;
     margin-bottom: 2rem;
 
     img {
         align-self: center;
         border-radius: 50%;
         width: 10rem;
+        height: 10rem;
     }
 
     .testimonial-card-details {
@@ -19,6 +20,10 @@
         flex-direction: inherit;
         justify-content: flex-start;
         align-items: self-start;
+
+        h3 {
+            font-weight: 500;
+        }
 
         p {
             text-align: left;
