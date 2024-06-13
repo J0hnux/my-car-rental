@@ -5,9 +5,36 @@
     align-items: center;
     padding: 0 2rem;
 
-    .testimonials-content {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
+    .testimonials-container {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+
+        h1 {
+            align-self: flex-start;
+            font-size: 1.75rem;
+        }
+
+        .testimonials-content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
     }
+
+
 }
+
+@media (min-width: 320px) {}
+
+@media (min-width: 475px) {}
+
+@media (min-width: 640px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 1024px) {}
+
+@media (min-width: 1280px) {}
+
+@media (min-width: 1536px) {}
