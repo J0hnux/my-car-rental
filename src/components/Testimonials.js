@@ -1,3 +1,4 @@
+import testimonials from "@/data/testimonials";
 import TestimonialCard from "./TestimonialCard";
 import "./Testimonials.scss";
 
@@ -6,9 +7,17 @@ const Testimonials = () => {
     <section className="testimonials">
       <h1>Testimonials</h1>
       <div className="testimonials-content">
-        <TestimonialCard />
-        <TestimonialCard />
-        <TestimonialCard />
+        {testimonials.map((testimony, index) => {
+          return (
+            <TestimonialCard
+              key={index}
+              imgUrl={testimony.imgURL}
+              imgAlt={testimony.imgAlt}
+              name={testimony.name}
+              testimony={testimony.testimony}
+            />
+          );
+        })}
       </div>
     </section>
   );
