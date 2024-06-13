@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
     border: 1px solid red;
     width: 400px;
@@ -30,4 +31,42 @@
             margin-top: 1rem;
         }
     }
+}
+
+@media (min-width: 320px) {
+    .testimonial-card {}
+}
+
+@media (min-width: 475px) {
+    .testimonial-card {
+        width: 400px;
+    }
+}
+
+@media (min-width: 640px) {
+    .testimonial-card {
+        width: 200px;
+    }
+}
+
+@media (min-width: 768px) {
+    .testimonial-card {
+        width: 200px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .testimonial-card {
+        width: 300px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .testimonial-card {
+        width: 300px;
+    }
+}
+
+@media (min-width: 1536px) {
+    .testimonial-card {}
 }

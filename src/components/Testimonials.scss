@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     padding: 0 2rem;
+    border: 1px solid #000;
 
     .testimonials-container {
         display: flex;
@@ -26,15 +27,39 @@
 }
 
 @media (min-width: 320px) {
-    .testimonials {}
+    .testimonials {
+        .testimonials-container {
+            .testimonials-content {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 1.5rem;
+            }
+        }
+    }
 }
 
 @media (min-width: 475px) {
-    .testimonials {}
+    .testimonials {
+        .testimonials-container {
+            .testimonials-content {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 1.5rem;
+            }
+        }
+    }
 }
 
 @media (min-width: 640px) {
-    .testimonials {}
+    .testimonials {
+        .testimonials-container {
+            .testimonials-content {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1.5rem;
+            }
+        }
+    }
 }
 
 @media (min-width: 768px) {
