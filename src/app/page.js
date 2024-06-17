@@ -6,6 +6,7 @@ import FeaturedCars from "@/components/FeaturedCars";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import HomeHeader from "@/components/HomeHeader";
+import SocialsPanel from "@/components/SocialsPanel";
 import Testimonials from "@/components/Testimonials";
 import { GlobalProvider } from "@/context/GlobalState";
 
@@ -13,6 +14,7 @@ export default function Home() {
   return (
     <GlobalProvider>
       <div className="text-center w-full">
+        <SocialsPanel />
         <HomeHeader />
         <Hero />
         <About />
