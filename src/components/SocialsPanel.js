@@ -22,24 +22,24 @@ const SocialsPanel = () => {
             <span>
               <FontAwesomeIcon icon={faEnvelope} color="#fff" />
             </span>
-            jc24.doliente@gmail.com
+            clark.doliente@abcdefg.com
           </li>
         </ul>
       </div>
       <div className="social-right-side">
         <ul>
           <li>
-            <a href="#">
+            <a href="https://www.facebook.com" target="_blank">
               <FontAwesomeIcon icon={faFacebook} color="#fff" />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://www.instagram.com" target="_blank">
               <FontAwesomeIcon icon={faInstagram} color="#fff" />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://www.youtube.com" target="_blank">
               <FontAwesomeIcon icon={faYoutube} color="#fff" />
             </a>
           </li>
