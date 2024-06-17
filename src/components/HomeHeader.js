@@ -1,12 +1,9 @@
 import Link from "next/link";
 import "./HomeHeader.scss";
-import SignInButton from "./SignInButton";
-import SocialsPanel from "./SocialsPanel";
 
 const HomeHeader = () => {
   return (
     <div className="header-container">
-      <SocialsPanel />
       <div className="main-header">
         <button className="mobile_nav">
           <svg
@@ -34,13 +31,13 @@ const HomeHeader = () => {
           <nav>
             <ul>
               <li>
-                <Link href="/About">About</Link>
+                <Link href="/About">ABOUT</Link>
               </li>
               <li>
-                <Link href="/Contact">Contact</Link>
+                <Link href="/Contact">CONTACT US</Link>
               </li>
               <li>
-                <Link href="/Login">Inquire Now</Link>
+                <Link href="/Login">INQUIRE NOW</Link>
               </li>
             </ul>
           </nav>
