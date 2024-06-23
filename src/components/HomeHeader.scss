@@ -26,24 +26,7 @@
             z-index: 99999999;
         }
 
-        // h1 {
-        //     font-size: 1.5rem;
-        //     font-weight: 600;
-
-        //     .logo-text {
-        //         text-decoration: none;
-        //         color: #000;
-
-        //         &:hover {
-        //             text-decoration: underline;
-        //         }
-        //     }
-
-        // }
-
         .header-nav-container {
-            //display: none;
-
             nav {
                 ul {
                     display: flex;
@@ -114,7 +97,7 @@
         margin-top: 3rem;
 
         .main-header {
-            padding: 1rem 5rem;
+            padding: 0rem 5rem;
 
             .btn_mobile_nav {
                 display: block;
