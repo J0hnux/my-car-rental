@@ -1,0 +1,19 @@
+.categories {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    .category-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1rem;
+    }
+
+}
