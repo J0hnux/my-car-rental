@@ -1,15 +1,19 @@
 import Link from "next/link";
+import Image from "next/image";
 import "./HomeHeader.scss";
 
 const HomeHeader = () => {
   return (
     <div className="header-container">
       <div className="main-header">
-        <h1>
-          <Link className="logo-text" href="/">
-            CLARK CARS
-          </Link>
-        </h1>
+        <Link className="car_logo" href="/">
+          <Image
+            src="/Cars_Logo.png"
+            width={200}
+            height={100}
+            alt="Cars Logo"
+          />
+        </Link>
         <button className="btn_mobile_nav">
           <svg
             xmlns="http://www.w3.org/2000/svg"
