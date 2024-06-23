@@ -10,7 +10,7 @@
     background: #ececec;
     margin-left: auto;
     margin-right: auto;
-    z-index: 9999999999;
+    z-index: 190000;
 
     .main-header {
         display: flex;
@@ -23,6 +23,7 @@
             display: none;
             border: none;
             background: none;
+            z-index: 99999999;
         }
 
         // h1 {
