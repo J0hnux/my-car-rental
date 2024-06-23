@@ -11,7 +11,6 @@
     margin-left: auto;
     margin-right: auto;
     z-index: 9999999999;
-    margin-top: 3rem;
 
     .main-header {
         display: flex;
@@ -75,6 +74,8 @@
 
 @media (min-width: 320px) {
     .header-container {
+        margin-top: 6rem;
+
         .main-header {
             padding: 1rem 1.5rem;
 
@@ -91,6 +92,8 @@
 
 @media (min-width: 475px) {
     .header-container {
+        margin-top: 4rem;
+
         .main-header {
             padding: 1rem 3rem;
 
@@ -107,6 +110,8 @@
 
 @media (min-width: 640px) {
     .header-container {
+        margin-top: 3rem;
+
         .main-header {
             padding: 1rem 5rem;
 
