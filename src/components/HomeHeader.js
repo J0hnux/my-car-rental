@@ -14,6 +14,12 @@ const HomeHeader = () => {
     if (btnMobileNav.current) {
       btnMobileNav.current.style.color = isOpen ? "#000" : "#fff";
     }
+
+    if (isOpen) {
+      document.body.style.overflow = "auto";
+    } else {
+      document.body.style.overflow = "hidden";
+    }
   };
 
   return (
