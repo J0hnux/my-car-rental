@@ -21,7 +21,7 @@
         padding: 1.5rem 7rem;
         font-weight: 500;
 
-        .mobile_nav {
+        .btn_mobile_nav {
             display: none;
             border: none;
             background: none;
@@ -42,24 +42,30 @@
 
         }
 
-        nav {
-            ul {
-                display: flex;
-                gap: 1rem;
-                list-style: none;
+        .header-nav-container {
+            //display: none;
 
-                li {
-                    a {
-                        color: #000;
-                        text-decoration: none;
+            nav {
+                ul {
+                    display: flex;
+                    gap: 1rem;
+                    list-style: none;
 
-                        &:hover {
-                            text-decoration: underline;
+                    li {
+                        a {
+                            color: #000;
+                            text-decoration: none;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
                         }
                     }
                 }
             }
         }
+
+
 
         button {
             padding: 0.5rem 1rem;
@@ -68,88 +74,110 @@
     }
 }
 
-// @media (min-width: 320px) {
-//     .header-container {
-//         max-width: 320px;
+@media (min-width: 320px) {
+    .header-container {
+        .main-header {
+            padding: 1rem 1.5rem;
 
-//         .mobile_nav {
-//             display: flex;
-//         }
+            .btn_mobile_nav {
+                display: block;
+            }
 
-//         h1 {
-//             font-size: 1.25rem;
-//         }
+            .header-nav-container {
+                display: none;
+            }
+        }
+    }
+}
 
-//         nav {
-//             ul {
-//                 display: none;
-//             }
-//         }
-//     }
-// }
+@media (min-width: 475px) {
+    .header-container {
+        .main-header {
+            padding: 1rem 3rem;
 
-// @media (min-width: 475px) {
-//     .header-container {
-//         max-width: 475px;
+            .btn_mobile_nav {
+                display: block;
+            }
 
-//         .mobile_nav {
-//             display: flex;
-//         }
+            .header-nav-container {
+                display: none;
+            }
+        }
+    }
+}
 
-//         strong {
-//             margin-left: 0.5rem;
-//             flex: 1;
-//         }
+@media (min-width: 640px) {
+    .header-container {
+        .main-header {
+            padding: 1rem 5rem;
 
-//         nav {
-//             ul {
-//                 display: none;
-//             }
-//         }
-//     }
-// }
+            .btn_mobile_nav {
+                display: block;
+            }
 
-// @media (min-width: 640px) {
-//     .header-container {
-//         max-width: 640px;
+            .header-nav-container {
+                display: none;
+            }
+        }
+    }
+}
 
-//         .mobile_nav {
-//             display: none;
-//         }
+@media (min-width: 768px) {
+    .header-container {
+        padding: 1rem 2rem;
 
-//         strong {
-//             margin-left: 0.5rem;
-//             flex: 0;
-//         }
+        .main-header {
+            .btn_mobile_nav {
+                display: none;
+            }
 
-//         nav {
-//             ul {
-//                 display: flex;
-//             }
-//         }
-//     }
-// }
+            .header-nav-container {
+                display: block;
+            }
+        }
+    }
+}
 
-// @media (min-width: 768px) {
-//     .header-container {
-//         max-width: 700px;
-//     }
-// }
+@media (min-width: 1024px) {
+    .header-container {
+        .main-header {
+            padding: 1.5rem 7rem;
 
-// @media (min-width: 1024px) {
-//     .header-container {
-//         max-width: 700px;
-//     }
-// }
+            .btn_mobile_nav {
+                display: none;
+            }
 
-// @media (min-width: 1280px) {
-//     .header-container {
-//         max-width: 700px;
-//     }
-// }
+            .header-nav-container {
+                display: block;
+            }
+        }
+    }
+}
 
-// @media (min-width: 1536px) {
-//     .header-container {
-//         max-width: 700px;
-//     }
-// }
+@media (min-width: 1280px) {
+    .header-container {
+        .main-header {
+            .btn_mobile_nav {
+                display: none;
+            }
+
+            .header-nav-container {
+                display: block;
+            }
+        }
+    }
+}
+
+@media (min-width: 1536px) {
+    .header-container {
+        .main-header {
+            .btn_mobile_nav {
+                display: none;
+            }
+
+            .header-nav-container {
+                display: block;
+            }
+        }
+    }
+}
