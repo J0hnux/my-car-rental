@@ -5,7 +5,12 @@ const HomeHeader = () => {
   return (
     <div className="header-container">
       <div className="main-header">
-        <button className="mobile_nav">
+        <h1>
+          <Link className="logo-text" href="/">
+            CLARK CARS
+          </Link>
+        </h1>
+        <button className="btn_mobile_nav">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -22,12 +27,7 @@ const HomeHeader = () => {
             <line x1="3" y1="18" x2="21" y2="18"></line>
           </svg>
         </button>
-        <h1>
-          <Link className="logo-text" href="/">
-            CLARK CARS
-          </Link>
-        </h1>
-        <div>
+        <div className="header-nav-container">
           <nav>
             <ul>
               <li>
