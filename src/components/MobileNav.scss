@@ -1,0 +1,22 @@
+.mobile__nav {
+    display: none; // flex
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    background: #000;
+    color: #fff;
+    z-index: 99999999;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+}
+
+.is-open {
+    display: flex;
+}
