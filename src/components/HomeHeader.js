@@ -1,10 +1,24 @@
 import Link from "next/link";
 import Image from "next/image";
 import "./HomeHeader.scss";
+import { useRef, useState } from "react";
+import MobileNav from "./MobileNav";
 
 const HomeHeader = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const btnMobileNav = useRef(null);
+
+  const toggleMenu = () => {
+    setIsOpen((open) => !open);
+
+    if (btnMobileNav.current) {
+      btnMobileNav.current.style.color = isOpen ? "#000" : "#fff";
+    }
+  };
+
   return (
     <div className="header-container">
+      <MobileNav isOpen={isOpen} />
       <div className="main-header">
         <Link className="car_logo" href="/">
           <Image
@@ -14,7 +28,11 @@ const HomeHeader = () => {
             alt="Cars Logo"
           />
         </Link>
-        <button className="btn_mobile_nav">
+        <button
+          ref={btnMobileNav}
+          className="btn_mobile_nav"
+          onClick={toggleMenu}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
