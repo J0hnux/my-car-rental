@@ -1,24 +1,47 @@
+import { useRef, useState } from "react";
 import "./FeaturedCar.scss";
-import MoreDetailsModal from "./MoreDetailsModal";
 
 const FeaturedCar = (props) => {
-  const handleClick = () => {
-    return <MoreDetailsModal />;
-    // set display to flex
+  const [isOpen, setIsOpen] = useState(false);
+  const btnShowModal = useRef(null);
+  const fCarDetCont = useRef(null);
+
+  const toggleMenu = () => {
+    setIsOpen((open) => !open);
+
+    if (isOpen) {
+      btnShowModal.current.innerText = "<";
+      if (fCarDetCont.current) {
+        fCarDetCont.current.style.backgroundColor = "transparent";
+      }
+    } else {
+      btnShowModal.current.innerText = ">";
+      if (fCarDetCont.current) {
+        fCarDetCont.current.style.backgroundColor = "#b4b4b4";
+      }
+    }
   };
 
   return (
     <div className="featured-car-card">
       <img src={props.imgURL} alt={props.imgAlt} />
 
-      <div className="featured-car-details">
-        <h2>{props.name}</h2>
-        <ul>
-          {props.details.map((detail, index) => (
-            <li key={index}>{detail}</li>
-          ))}
-        </ul>
-        <button onClick={handleClick}>More Details</button>
+      <div ref={fCarDetCont} className="featured-car-details-container">
+        <button ref={btnShowModal} onClick={toggleMenu}>
+          {"<"}
+        </button>
+        <div
+          className={`featured-car-details ${
+            isOpen ? "modal-expanded" : "modal-collapsed"
+          }`}
+        >
+          <h2>{props.name}</h2>
+          <ul>
+            {props.details.map((detail, index) => (
+              <li key={index}>{detail}</li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );
