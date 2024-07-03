@@ -1,7 +1,7 @@
 import "./Footer.scss";
 
 const Footer = () => {
-  return <footer>footer</footer>;
+  return <footer>Copyright © 2024 Clark Car Rentals</footer>;
 };
 
 export default Footer;
