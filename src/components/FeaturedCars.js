@@ -10,7 +10,8 @@ const FeaturedCars = () => {
         aria-label="Featured Cars Image Carousel"
       >
         <h1>
-          <span>FEATURED</span> CARS FOR RENT
+          <span className="fc-sp-1">FEATURED</span>
+          <span className="fc-sp-2"> CARS FOR RENT</span>
         </h1>
         {featuredCars.map((car, index) => (
           <FeaturedCar
