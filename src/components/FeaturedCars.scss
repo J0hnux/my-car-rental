@@ -8,24 +8,47 @@
         flex-direction: inherit;
         position: relative;
         margin: auto;
+    }
+}
 
-        h1 {
-            font-size: 2rem;
-            align-self: self-start;
+@media (min-width: 320px) {
+    .featured {
+        .featured-car-container {
+            h1 {
+                font-size: 1.5rem;
+                align-self: self-start;
+                margin-left: 0.5rem;
 
-            span {
-                font-weight: 300;
+                .fc-sp-1 {
+                    font-weight: 300;
+                }
+
+                .fc-sp-2 {
+                    font-weight: 800;
+                }
             }
         }
     }
 }
 
-@media (min-width: 320px) {
-    .featured {}
-}
-
 @media (min-width: 475px) {
-    .featured {}
+    .featured {
+        .featured-car-container {
+            h1 {
+                font-size: 2rem;
+                align-self: self-start;
+                margin-left: 0;
+
+                .fc-sp-1 {
+                    font-weight: normal;
+                }
+
+                .fc-sp-2 {
+                    font-weight: 100;
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 640px) {
