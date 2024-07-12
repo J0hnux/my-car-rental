@@ -9,6 +9,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     background-color: black;
+    z-index: 10;
 
     &>button {
         background-color: transparent;
