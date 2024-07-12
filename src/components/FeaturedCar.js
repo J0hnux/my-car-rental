@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useRef, useState } from "react";
 import "./FeaturedCar.scss";
 
@@ -24,7 +25,13 @@ const FeaturedCar = (props) => {
 
   return (
     <div className="featured-car-card">
-      <img src={props.imgURL} alt={props.imgAlt} />
+      <Image
+        className="featured-car-card-img"
+        src={props.imgURL}
+        alt={props.imgAlt}
+        width={900}
+        height={900}
+      />
 
       <div ref={fCarDetCont} className="featured-car-details-container">
         <button ref={btnShowModal} onClick={toggleMenu}>
