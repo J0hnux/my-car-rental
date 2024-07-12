@@ -1,26 +1,26 @@
 const categories = [
   {
-    imgURL: "/Hero.jpg",
+    imgURL: "/Categories/Offroad.png",
     imgAlt: "Offroad Car",
     category: "OFF-ROADS",
   },
   {
-    imgURL: "/Hero.jpg",
+    imgURL: "/Categories/Sedan.png",
     imgAlt: "Sedan Car",
     category: "SEDANS",
   },
   {
-    imgURL: "/Hero.jpg",
+    imgURL: "/Categories/SportsCar.png",
     imgAlt: "Sports Car",
     category: "SPORTS",
   },
   {
-    imgURL: "/Hero.jpg",
+    imgURL: "/Categories/SUV.png",
     imgAlt: "SUV Car",
     category: "SUVS",
   },
   {
-    imgURL: "/Hero.jpg",
+    imgURL: "/Categories/Pickup.png",
     imgAlt: "Pickup Car",
     category: "PICKUPS",
   },
