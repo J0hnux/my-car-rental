@@ -1,0 +1,54 @@
+.contact-form-container {
+    border: 1px solid #adadad;
+    border-radius: 8px;
+    background-color: #f3f3f3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    max-width: 900px;
+    padding: 2rem;
+
+    label {
+        align-self: flex-start;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+    }
+
+    button {
+        background: #000;
+        color: #f3f3f3;
+        padding: 0.5rem 0;
+        border-radius: 4px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        border-bottom: 1px solid #000;
+        background: none;
+        padding: 0.25rem 0.75rem;
+    }
+
+    .contact-form-area {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+
+        .cont-form-horizontal-field {
+            display: flex;
+            padding-bottom: 2rem;
+        }
+
+        .cont-form-element {
+            display: flex;
+            flex-direction: column;
+            padding: 0 0.5rem;
+        }
+
+        .cfe-last {
+            padding-bottom: 2rem;
+        }
+    }
+}
