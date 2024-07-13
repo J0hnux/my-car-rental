@@ -7,8 +7,6 @@ export default function MapGoogle() {
   const containerStyle = {
     width: "100%",
     height: "400px",
-    borderTopLeftRadius: "8px",
-    borderTopRightRadius: "8px",
   };
 
   const center = {
