@@ -6,13 +6,14 @@ const MobileNav = (props) => {
     <nav className={`mobile__nav ${props.isOpen ? "is-open" : ""} `}>
       <ul>
         <li>
-          <Link href="/About">ABOUT</Link>
+          <Link href="/About" onClick={props.toggleMenu}>
+            ABOUT
+          </Link>
         </li>
         <li>
-          <Link href="/Contact">CONTACT US</Link>
-        </li>
-        <li>
-          <Link href="/Login">INQUIRE NOW</Link>
+          <Link href="/Contact" onClick={props.toggleMenu}>
+            CONTACT US
+          </Link>
         </li>
       </ul>
     </nav>
