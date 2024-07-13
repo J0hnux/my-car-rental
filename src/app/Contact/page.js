@@ -4,15 +4,17 @@ import HomeHeader from "@/components/HomeHeader";
 import "@/app/globals.css";
 import "@/app/style.scss";
 import "./Contact.scss";
-import ContactUsForm from "@/components/ContactUsForm";
+import ContactUsForm from "./components/ContactUsForm";
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <>
       <SocialsPanel />
       <HomeHeader />
-      <ContactUsForm />
-    </div>
+      <div className="contact">
+        <ContactUsForm />
+      </div>
+    </>
   );
 };
 
