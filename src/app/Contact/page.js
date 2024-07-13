@@ -5,6 +5,7 @@ import "@/app/globals.css";
 import "@/app/style.scss";
 import "./Contact.scss";
 import ContactUsForm from "./components/ContactUsForm";
+import Footer from "@/components/Footer";
 
 const Contact = () => {
   return (
@@ -14,6 +15,7 @@ const Contact = () => {
       <div className="contact">
         <ContactUsForm />
       </div>
+      <Footer />
     </>
   );
 };
