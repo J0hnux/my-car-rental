@@ -1,7 +1,43 @@
 .contact {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 3rem;
     text-align: center;
     width: 100%;
+}
+
+
+@media (min-width: 320px) {
+    .contact {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (min-width: 475px) {
+    .contact {}
+}
+
+@media (min-width: 640px) {
+    .contact {}
+}
+
+@media (min-width: 768px) {
+    .contact {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contact {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1280px) {
+    .contact {}
+}
+
+@media (min-width: 1536px) {
+    .contact {}
 }
