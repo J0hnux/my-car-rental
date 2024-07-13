@@ -31,6 +31,10 @@
         padding: 0.25rem 0.75rem;
     }
 
+    textarea {
+        min-height: 175px;
+    }
+
     .contact-form-area {
         display: flex;
         flex-direction: column;
@@ -50,5 +54,28 @@
         .cfe-last {
             padding-bottom: 2rem;
         }
+    }
+}
+
+.cont-form-right-panel {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+
+    .cont-form-rp-container {
+        display: flex;
+        flex-direction: column;
+
+        .cont-form-rp-details {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background: #f1f1f1;
+            padding: 1rem;
+        }
+    }
+
+    &:last-child {
+        align-self: flex-start;
     }
 }
