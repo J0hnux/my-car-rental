@@ -1,4 +1,3 @@
-"use client";
 import "./ContactUsForm.scss";
 import MapGoogle from "./GoogleMap/MapGoogle";
 
@@ -51,21 +50,29 @@ const ContactUsForm = () => {
           <MapGoogle />
           <div className="cont-form-rp-details">
             <b>
-              <u>CALL US</u>
+              <u>
+                <p>CALL US</p>
+              </u>
             </b>
-            +63 123 456 7890
+            <p>+63 123 456 7890</p>
             <b>
-              <u>EMAIL US</u>
+              <u>
+                <p>EMAIL US</p>
+              </u>
             </b>
-            clark.doliente@abcdefg.com
+            <p>clark.doliente@abcdefg.com</p>
             <b>
-              <u>VISIT US</u>
+              <u>
+                <p>VISIT US</p>
+              </u>
             </b>
-            2nd Flr. 4027 Calambaga St, Calamba City, Laguna, Philippines
+            <p>2nd Flr. 4027 Calambaga St, Calamba City, Laguna, Philippines</p>
             <b>
-              <u>OFFICE HOURS</u>
+              <u>
+                <p>OFFICE HOURS</p>
+              </u>
             </b>
-            Monday to Sunday 8AM to 11PM
+            <p>Monday to Sunday 8AM to 11PM</p>
           </div>
         </div>
       </div>
