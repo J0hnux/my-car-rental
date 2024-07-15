@@ -1,5 +1,5 @@
 .categories {
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -11,9 +11,13 @@
     }
 
     .category-grid {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
         gap: 1rem;
+
     }
 
 }
