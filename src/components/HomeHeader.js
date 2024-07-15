@@ -16,7 +16,7 @@ const HomeHeader = () => {
     }
 
     if (isOpen) {
-      document.body.style.overflow = "auto";
+      document.body.style.overflow = "scroll";
     } else {
       document.body.style.overflow = "hidden";
     }
@@ -24,7 +24,7 @@ const HomeHeader = () => {
 
   return (
     <div className="header-container">
-      <MobileNav isOpen={isOpen} />
+      <MobileNav isOpen={isOpen} toggleMenu={toggleMenu} />
       <div className="main-header">
         <Link className="car_logo" href="/">
           <Image
@@ -63,9 +63,6 @@ const HomeHeader = () => {
               </li>
               <li>
                 <Link href="/Contact">CONTACT US</Link>
-              </li>
-              <li>
-                <Link href="/Login">INQUIRE NOW</Link>
               </li>
             </ul>
           </nav>
