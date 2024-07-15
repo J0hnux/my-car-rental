@@ -5,6 +5,8 @@ import "@/app/globals.css";
 import "@/app/style.scss";
 import "./About.scss";
 import Footer from "@/components/Footer";
+import aboutReviews from "@/data/about-reviews";
+import AboutReviewCard from "./components/AboutReview/AboutReviewCard";
 
 const About = () => {
   return (
@@ -43,6 +45,23 @@ const About = () => {
       <div className="about-page-review">
         <div className="about-page-review-container">
           <h1>CLARK CARS REVIEWS</h1>
+          <div className="about-page-review-grid">
+            {aboutReviews.map((review, index) => {
+              return (
+                <AboutReviewCard
+                  key={index}
+                  imgURL={review.imgURL}
+                  imgAlt={review.imgAlt}
+                  name={review.name}
+                  username={review.username}
+                  message={review.message}
+                  numberOfLikes={review.numberOfLikes}
+                  numberOfReplies={review.numberOfReplies}
+                  numberOfShares={review.numberOfShares}
+                />
+              );
+            })}
+          </div>
         </div>
       </div>
       <div className="about-page-footer">
