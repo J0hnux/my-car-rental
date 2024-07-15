@@ -6,8 +6,8 @@ const Testimonials = () => {
   return (
     <section className="testimonials">
       <div className="testimonials-container">
-        <h1>Testimonials</h1>
-        <div className="testimonials-content">
+        <h1>TESTIMONIALS FROM OUR TOP CLIENTS</h1>
+        <div className="mt-3 testimonials-content">
           {testimonials.map((testimony, index) => {
             return (
               <TestimonialCard
@@ -15,6 +15,7 @@ const Testimonials = () => {
                 imgUrl={testimony.imgURL}
                 imgAlt={testimony.imgAlt}
                 name={testimony.name}
+                position={testimony.position}
                 testimony={testimony.testimony}
               />
             );
