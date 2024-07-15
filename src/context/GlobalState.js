@@ -14,20 +14,6 @@ const initialState = {
     // { id: 3, text: 'Book', amount: -10 },
     // { id: 4, text: 'Camera', amount: 150 },
   ],
-  testimonials: [
-    {
-      id: 0,
-      image: "",
-      name: "Clark Doliente",
-      testimony: "Hello World!",
-    },
-    {
-      id: 1,
-      image: "",
-      name: "John Clark",
-      testimony: "I am learning how to become a fullstack developer!",
-    },
-  ],
 };
 
 // Create Context
