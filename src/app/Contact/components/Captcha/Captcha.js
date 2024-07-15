@@ -16,6 +16,7 @@ const Captcha = (props) => {
           className="cfcca-your-answer"
           type="text"
           placeholder="Your answer..."
+          onChange={props.value}
         />
       </div>
     </div>
