@@ -19,7 +19,7 @@ const testimonials = [
     imgURL: "/Testimonials/daniel.png",
     imgAlt: "daniel's testimony",
     name: "Daniel Montford",
-    position: "Principal of Montford University",
+    position: "Principal at Montford University",
     testimony:
       "The staffs here are very friendly and accomodating. They will help you find the car base on your needs. (5/5)",
   },
