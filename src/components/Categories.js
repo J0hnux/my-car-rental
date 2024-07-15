@@ -5,7 +5,7 @@ import categories from "@/data/categories";
 const Categories = () => {
   return (
     <section className="categories">
-      <h1>Categories</h1>
+      <h1>CATEGORIES</h1>
       <div className="category-grid">
         {categories.map((category, index) => {
           return (
