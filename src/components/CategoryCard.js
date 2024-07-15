@@ -8,7 +8,7 @@ const CategoryCard = (props) => {
   return (
     <div className="category-card">
       {/* On-click Link to Category page */}
-      <Link href="/Category" target="_blank">
+      <Link href="/Category" rel="noopener noreferrer">
         <Image
           className="category-img"
           src={props.imgURL}
