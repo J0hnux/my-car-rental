@@ -5,11 +5,16 @@ import MapGoogle from "./GoogleMap/MapGoogle";
 import { useEffect, useState } from "react";
 
 const ContactUsForm = () => {
-  const handleSubmit = () => {
-    console.log("Send details to Telegram!");
-  };
-
   const [randomCaptcha, setRandomCaptcha] = useState(null);
+  const [answer, setAnswer] = useState("");
+
+  const handleSubmit = () => {
+    if (answer === randomCaptcha.answer) {
+      alert("Proceed");
+    } else {
+      alert("Try again!");
+    }
+  };
 
   useEffect(() => {
     setRandomCaptcha(getRandomItem(captchaData));
@@ -60,6 +65,7 @@ const ContactUsForm = () => {
             <Captcha
               imgURL={randomCaptcha.imgURL}
               imgAlt={randomCaptcha.imgAlt}
+              value={(e) => setAnswer(e.target.value)}
             />
           ) : (
             "Loading Captcha..."
