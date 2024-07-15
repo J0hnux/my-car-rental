@@ -1,13 +1,16 @@
 .testimonial-card {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 1px solid red;
+    border-radius: 16px;
+    background-color: rgb(233, 233, 233);
     width: 400px;
     padding: 2rem;
     margin-bottom: 2rem;
+    z-index: 5;
 
     img {
         align-self: center;
@@ -22,19 +25,32 @@
         justify-content: flex-start;
         align-items: self-start;
 
-        h3 {
-            font-weight: 500;
+        .testimonial-first {
+            padding: 0;
+
+            h3 {
+                text-align: left;
+                font-weight: 500;
+            }
+
+            p {
+                margin: 0;
+                padding: 0;
+            }
         }
 
         p {
             text-align: left;
             margin-top: 1rem;
         }
+
     }
 }
 
 @media (min-width: 320px) {
-    .testimonial-card {}
+    .testimonial-card {
+        width: 300px;
+    }
 }
 
 @media (min-width: 475px) {
@@ -68,5 +84,7 @@
 }
 
 @media (min-width: 1536px) {
-    .testimonial-card {}
+    .testimonial-card {
+        width: 300px;
+    }
 }
