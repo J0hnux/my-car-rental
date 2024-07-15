@@ -185,6 +185,12 @@
             .cont-form-element {
                 display: flex;
                 padding: 0 0.5rem;
+
+                input {
+                    padding: 0;
+                    width: 100%;
+                    padding-left: 1rem;
+                }
             }
 
             .cfe-last {
