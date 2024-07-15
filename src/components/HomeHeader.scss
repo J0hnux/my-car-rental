@@ -97,7 +97,7 @@
         margin-top: 3rem;
 
         .main-header {
-            padding: 0rem 5rem;
+            padding: 1rem 5rem;
 
             .btn_mobile_nav {
                 display: block;
@@ -112,9 +112,11 @@
 
 @media (min-width: 768px) {
     .header-container {
-        padding: 1rem 2rem;
+
 
         .main-header {
+            padding: 1rem 2rem;
+
             .btn_mobile_nav {
                 display: none;
             }
@@ -128,6 +130,7 @@
 
 @media (min-width: 1024px) {
     .header-container {
+
         .main-header {
             padding: 1rem 7rem;
 
@@ -144,6 +147,7 @@
 
 @media (min-width: 1280px) {
     .header-container {
+
         .main-header {
             padding: 1rem 7rem;
 
