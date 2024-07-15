@@ -1,9 +1,23 @@
+import captchaData from "@/data/captcha";
+import Captcha from "./Captcha/Captcha";
 import "./ContactUsForm.scss";
 import MapGoogle from "./GoogleMap/MapGoogle";
+import { useEffect, useState } from "react";
 
 const ContactUsForm = () => {
   const handleSubmit = () => {
     console.log("Send details to Telegram!");
+  };
+
+  const [randomCaptcha, setRandomCaptcha] = useState(null);
+
+  useEffect(() => {
+    setRandomCaptcha(getRandomItem(captchaData));
+  }, []);
+
+  const getRandomItem = (arr) => {
+    const randomIndex = Math.floor(Math.random() * arr.length);
+    return arr[randomIndex];
   };
 
   return (
@@ -41,8 +55,16 @@ const ContactUsForm = () => {
             <label htmlFor="text">Message</label>
             <textarea placeholder="message" />
           </div>
-          {/* Re-Captcha */}
-          <button>Submit</button>
+          {/* Captcha */}
+          {randomCaptcha ? (
+            <Captcha
+              imgURL={randomCaptcha.imgURL}
+              imgAlt={randomCaptcha.imgAlt}
+            />
+          ) : (
+            "Loading Captcha..."
+          )}
+          <button className="mt-6">Submit</button>
         </form>
       </div>
       <div className="cont-form-right-panel">
