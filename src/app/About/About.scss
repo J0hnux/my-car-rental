@@ -41,15 +41,64 @@
 
 .about-page-review-grid {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 
     .about-review-card {
-        width: 300px;
+        border-radius: 8px;
+        width: 20rem;
+        height: fit-content;
         background: #e0e0e0;
-        padding: 1rem;
-        margin-bottom: 1rem;
+        padding: 1.5rem;
+        margin: 1.25rem 1rem;
+
+        .about-review-card-container {
+
+            .about-review-card-first {
+                display: flex;
+                gap: 1rem;
+
+                .arcf-image {
+                    border-radius: 50%;
+                    height: 3rem;
+                    width: 3rem;
+                }
+
+                .arcf-right {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: left;
+
+                    .arcf-name {
+                        font-size: 1.25rem;
+                    }
+
+                    .arcf-username {
+                        font-size: 0.8rem;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            p.arc-user-message {
+                margin-top: 1.25rem;
+                min-height: 12rem;
+                max-height: 12rem;
+                overflow-y: scroll;
+                scrollbar-width: thin;
+                scrollbar-color: #888 #eee;
+            }
+
+            .about-review-card-stats {
+                display: flex;
+                justify-content: space-between;
+                padding: 1rem 0;
+            }
+
+            .arc-postDate {
+                text-align: right;
+            }
+        }
     }
 }
-
-
-
-.about-page-footer {}
