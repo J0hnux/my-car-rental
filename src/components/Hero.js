@@ -3,6 +3,7 @@ import "./Hero.scss";
 import ImageSlider from "./ImageSlider";
 import images from "@/data/images";
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -23,7 +24,9 @@ const Hero = () => {
       </ImageSlider>
       <div className="hero-content">
         <h1>Looking to drive your own dream car?</h1>
-        <button>Inquire Now</button>
+        <Link className="hero-inquire-now" href="/Contact">
+          Inquire Now
+        </Link>
       </div>
     </div>
   );
