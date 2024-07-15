@@ -58,6 +58,7 @@ const About = () => {
                   numberOfLikes={review.numberOfLikes}
                   numberOfReplies={review.numberOfReplies}
                   numberOfShares={review.numberOfShares}
+                  postDate={review.postDate}
                 />
               );
             })}
