@@ -8,11 +8,11 @@ const images = [
     imgAlt: "hero 2",
   },
   {
-    imgURL: "/Hero3.png",
+    imgURL: "/hero3.png",
     imgAlt: "hero 3",
   },
   {
-    imgURL: "/Hero4.png",
+    imgURL: "/hero4.png",
     imgAlt: "hero 4",
   },
 ];
