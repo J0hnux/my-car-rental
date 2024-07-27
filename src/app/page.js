@@ -1,4 +1,3 @@
-"use client";
 import About from "@/components/About";
 import Brands from "@/components/Brands";
 import Categories from "@/components/Categories";
