@@ -1,4 +1,5 @@
-import { useEffect, useRef, useState } from "react";
+"use client";
+
 import "./Hero.scss";
 import ImageSlider from "./ImageSlider";
 import images from "@/data/images";
