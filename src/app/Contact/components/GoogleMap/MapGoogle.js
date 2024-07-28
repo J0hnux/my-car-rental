@@ -16,7 +16,7 @@ export default function MapGoogle() {
 
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
-    googleMapsApiKey: "AIzaSyChUMytwjUbLrLsxjqGgQcABpT2fA7xTRI",
+    googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY,
   });
 
   const [map, setMap] = React.useState(null);
